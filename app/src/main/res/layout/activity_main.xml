@@ -39,7 +39,7 @@
             android:text="@string/button_start_text" />
 
         <Button
-            android:id="@+id/buttonPause"
+            android:id="@+id/buttonStop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button_pause_text" />
