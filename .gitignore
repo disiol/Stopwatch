@@ -9,3 +9,5 @@
 /build
 /captures
 .externalNativeBuild
+Буде вилучено app/libs/
+/.idea/vcs.xml
