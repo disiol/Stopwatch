@@ -30,7 +30,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         buttonStop.setOnClickListener(this);
         buttonReset.setOnClickListener(this);
 
+        if (savedInstanceState != null) {
+            seconds = savedInstanceState.getInt("seconds");
+            isRunning = savedInstanceState.getBoolean("isRunning");
+
+        }
+
         runTimer();
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("seconds", seconds);
+        outState.putBoolean("isRunning", isRunning);
     }
 
     @Override
